@@ -17,6 +17,7 @@ class ExpensesForm extends React.Component {
         <label htmlFor="expense-currency">
           Moeda
           <select name="currency" id="expense-currency" onChange={ handler }>
+            <option value="">Selecione</option>
             { currencies.map((currency) => (
               <option key={ currency } value={ currency }>
                 {currency}
